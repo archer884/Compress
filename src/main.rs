@@ -22,7 +22,7 @@ fn main() {
             let compressed_path = Path::new(&path_spec);
 
             match compress_file(&path, &compressed_path) {
-                Ok(count) => { println!("Success! {} bits written.", count); },
+                Ok(count) => { println!("Done: {} bits saved.", count); },
                 Err(e) => {
                     println!("{}", e.description());
                 }
